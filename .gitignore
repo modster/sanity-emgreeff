@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 # to-do.md
+# project-settings.md
 # Dependencies
 /node_modules
 /.pnp
