@@ -1,6 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-to-do.md
-project-settings.md
+.env
+.env.*
+!.env.example
+
 # Dependencies
 /node_modules
 /.pnp
@@ -27,3 +29,4 @@ sanity.config.js
 
 # Typescript
 *.tsbuildinfo
+

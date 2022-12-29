@@ -1,14 +1,14 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity'
+import { deskTool } from 'sanity/desk'
+import { visionTool } from '@sanity/vision'
+import { schemaTypes } from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'emgreeff',
+  title: process.env.PROJECT_TITLE,
 
-  projectId: 'i7mau01w',
-  dataset: 'production',
+  projectId: process.env.PROJECT_ID,
+  dataset: process.env.DATASET_ID,
 
   plugins: [deskTool(), visionTool()],
 
